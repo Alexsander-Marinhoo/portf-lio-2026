@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --main-color: #68D38A;
+  --main-color-dark: #68D38A;
+  --title-color: #051937;
+  --texte-p-color: #585858;
+}
+
+@font-face {
+  font-family: 'Canoppe';
+  src: url('/fonts/Canopee.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Felgine';
+  src: url('/fonts/Felgineregular.otf') format('opentype');
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --title-color: #e7e7e7;
+    --texte-p-color: #b7b7b7;
+    --main-color-dark: #306340;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+.clip {
+  clip-path: polygon(0% 0% , 100% 0% , 100% 100% , 0% 100%);
+}
+
+.recorte {
+  transform: translateY(100%);
+}
+
+

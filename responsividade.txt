@@ -1,0 +1,11 @@
+22/03/2025
+navbar - OK
+not-found - OK
+contato - OK
+content- OK
+projetos - OK
+sobre o projeto - OK 
+footer - OK
+
+FALTA!
+home - OK
