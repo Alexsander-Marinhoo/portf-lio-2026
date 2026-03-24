@@ -44,18 +44,30 @@
                         ))}
                     </div>
                     <div className="mt-10 mb-4 block lg:hidden">
-                        <ButtonProject href={project.urlSite || '/'}>
-                            <p className="">visite</p>
-                            <ArrowUpRight size={30} />
-                        </ButtonProject>
+                        {project.urlSite === "" ? (
+                            <div className="bg-(--texte-p-color) px-3 py-1 rounded-2xl mt-8">
+                                <p className="text-md font-mono text-(--background)">Design Finalizado</p>
+                            </div>
+                        ) : (
+                            <ButtonProject href={project.urlSite || '/'}>
+                                <p className="">visite</p>
+                                <ArrowUpRight size={30} />
+                            </ButtonProject>
+                        )}
                     </div>
                     <div className="mb-30 h-[600] w-[85vw] rounded-3xl shadow-md relative">
                         <Image className="object-cover object-center rounded-3xl lg:mt-10" src={project.src} fill alt="imagem de projeto"/>
                         <div className="absolute top-0 right-0 -translate-2/4 hidden lg:block">
-                            <ButtonContactMagnetic href={project.urlSite || '/'} target="_blank">
-                                <p className="text-xl font-[canoppe]">visite</p>
-                                <ArrowUpRight size={30} />
-                            </ButtonContactMagnetic>
+                            {project.urlSite === "" ? (
+                                <div className="bg-(--texte-p-color) px-3 py-1 rounded-2xl mt-8">
+                                    <p className="text-md font-mono text-(--background)">Design Finalizado</p>
+                                </div>
+                            ) : (
+                                <ButtonContactMagnetic href={project.urlSite || '/'} target="_blank">
+                                    <p className="text-xl font-[canoppe]">visite</p>
+                                    <ArrowUpRight size={30} />
+                                </ButtonContactMagnetic>
+                            )}
                         </div>
                     </div>
                     <div className="mx-5 mb-30 xl:mx-48">
