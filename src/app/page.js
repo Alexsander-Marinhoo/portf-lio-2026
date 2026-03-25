@@ -13,7 +13,7 @@ export default function Home() {
     <section className="relative w-auto"> 
       <Navbar showContact={true} color={'var(--foreground)'}/>
       <div className="mt-[20vh]">
-        <div className="font-[canoppe] text-6xl md:text-8xl 2xl:text-9xl mx-5  xl:mx-64 text-(--title-color)">
+        <div className="font-[canoppe] text-7xl md:text-8xl 2xl:text-9xl mx-5  xl:mx-64 text-(--title-color)">
           <h1 className="text-center xl:text-left">web designer &</h1>
           <h1 className="text-center xl:text-right">front-end developer</h1>
         </div>
