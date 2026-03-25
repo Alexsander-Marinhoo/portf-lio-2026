@@ -28,7 +28,7 @@ export default function Home() {
           </ButtonProject>
         </div>
         <div className="mt-[10vh] lg:mt-[30vh] mx-5 lg:mx-64">
-          <Content text1='Minha jornada no mundo digital é marcada pela busca por combinar estética e funcionalidade para criar experiências digitais envolventes.' text2='Minha jornada no mundo digital é marcada pela busca por combinar estética e funcionalidade para criar experiências digitais envolventes.'/>
+          <Content text1='Minha jornada no mundo digital é marcada pela busca por combinar estética e funcionalidade para criar experiências digitais envolventes.' text2='Com anos de experiência na área, desenvolvi habilidades sólidas em transformar conceitos em interfaces visuais intuitivas e elegantes.'/>
         </div>
         <div  className="flex justify-center lg:justify-end m-15 mx-5 lg:mx-64">
           <ButtonContactMagnetic href='/contato'>
@@ -48,42 +48,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <div className="mt-[30vh]">
-        <div className="font-[canoppe] text-9xl mx-64 text-(--title-color)">
-          <h1 className="text-left">web designer &</h1>
-          <h1 className="text-right">front-end developer</h1>
-        </div>
-        <div className=" text-xl text-(--texte-p-color) font-mono font-medium mx-64">
-          <p>Especializado em transformar conceitos criativos em experiências digitais envolventes.</p>
-          <p>Combinando estética e funcionalidade para criar soluções excepcionais.</p>
-        </div>
-        <div className="mt-6 mx-64">
-          <ButtonProject href='/projetos'>
-            <p className="">Veja meus projetos!</p>
-            <ArrowDown />
-          </ButtonProject>
-        </div>
-        <div className="mt-[30vh] mx-64">
-          <Content text1='Minha jornada no mundo digital é marcada pela busca por combinar estética e funcionalidade para criar experiências digitais envolventes.' text2='Minha jornada no mundo digital é marcada pela busca por combinar estética e funcionalidade para criar experiências digitais envolventes.'/>
-        </div>
-        <div  className="flex justify-end m-15 mx-64">
-          <ButtonContactMagnetic href='/contato'>
-            <p className="text-4xl">contato</p>
-          </ButtonContactMagnetic>
-        </div>
-        <div className="mb-15">
-          <div className="mx-64">
-            <h1 className="font-[canoppe] text-7xl text-(--main-color)">Alguns Projetos </h1>
-            <h2 className="font-mono text-xl text-(--foreground)">Alguns dos meus projetos favoritos :)</h2>
-          </div>
-          <SliderProjects />
-          <div className="flex justify-center">
-            <ButtonProject href='/projetos'>
-              <p className="">Mais Projetos</p>
-            </ButtonProject>
-          </div>
-        </div>
-      </div> */}
         <Footer />
     </section>
   );
