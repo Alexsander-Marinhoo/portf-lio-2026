@@ -36,7 +36,7 @@
             <section>
                 <Navbar showContact={true} color='var(--foreground)' />
                 <div className="flex flex-col justify-center items-center mt-[15vh] px-5 lg:mt-[20vh]">
-                    <h1 className="font-[canoppe] text-8xl lg:text-9xl text-center text-(--foreground)">{project.nome}</h1>
+                    <h1 className="font-[canoppe] text-8xl lg:text-9xl text-center text-(--foreground) break-all">{project.nome}</h1>
                     <div className="flex justify-center items-center font-mono gap-3">
                         <span className="underline text-sm lg:text-md">{project.situacao} / {project.data}</span>
                         {project.condicoes.map((item , index) => (
