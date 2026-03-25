@@ -35,8 +35,8 @@
         return(
             <section>
                 <Navbar showContact={true} color='var(--foreground)' />
-                <div className="flex flex-col justify-center items-center mt-[20vh] px-5">
-                    <h1 className="font-[canoppe] text-6xl lg:text-9xl text-center text-(--foreground)">{project.nome}</h1>
+                <div className="flex flex-col justify-center items-center mt-[15vh] px-5 lg:mt-[20vh]">
+                    <h1 className="font-[canoppe] text-8xl lg:text-9xl text-center text-(--foreground)">{project.nome}</h1>
                     <div className="flex justify-center items-center font-mono gap-3">
                         <span className="underline text-sm lg:text-md">{project.situacao} / {project.data}</span>
                         {project.condicoes.map((item , index) => (
@@ -46,7 +46,7 @@
                     <div className="mt-10 mb-4 block lg:hidden">
                         {project.urlSite === "" ? (
                             <div className="bg-(--texte-p-color) px-3 py-1 rounded-2xl mt-8">
-                                <p className="text-md font-mono text-(--background)">Design Finalizado</p>
+                                <p className="text-md font-mono text-(--background)">Projeto em andamento</p>
                             </div>
                         ) : (
                             <ButtonProject href={project.urlSite || '/'}>
@@ -60,7 +60,7 @@
                         <div className="absolute top-0 right-0 -translate-2/4 hidden lg:block">
                             {project.urlSite === "" ? (
                                 <div className="bg-(--texte-p-color) px-3 py-1 rounded-2xl mt-8">
-                                    <p className="text-md font-mono text-(--background)">Design Finalizado</p>
+                                    <p className="text-md font-mono text-(--background)">Projeto em andamento</p>
                                 </div>
                             ) : (
                                 <ButtonContactMagnetic href={project.urlSite || '/'} target="_blank">

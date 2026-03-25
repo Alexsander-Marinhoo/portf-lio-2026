@@ -28,7 +28,7 @@ export default function SliderProjects(){
 
     useEffect(() => {
         gsap.to(refSlider1.current, {
-            x: 150,
+            x: 200,
             scrollTrigger: {
                 trigger: refContainerSlider.current,
                 start: 'top bottom',
@@ -37,7 +37,7 @@ export default function SliderProjects(){
             }
         })
         gsap.to(refSlider2.current, {
-            x: -150,
+            x: -200,
             scrollTrigger: {
                 trigger: refContainerSlider.current,
                 start: 'top bottom',

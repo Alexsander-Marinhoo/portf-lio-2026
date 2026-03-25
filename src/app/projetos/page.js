@@ -25,11 +25,14 @@ export default function Projetos(){
 
 
     const mouseEnter = () => {
+        const mm = gsap.matchMedia();
 
-        gsap.to(refModal.current, {
-            scale: 1,
-            duration:0.2,
-            ease: 'circ.out',
+        mm.add("(min-width: 1280px)", () => {
+            gsap.to(refModal.current, {
+                scale: 1,
+                duration:0.2,
+                ease: 'circ.out',
+            })
         })
     }
 
@@ -68,7 +71,7 @@ export default function Projetos(){
         <div>
             
             <Navbar showContact={true} color={'var(--foreground)'}/>
-            <div className="px-5 mt-[18vh] lg:px-32">
+            <div className="px-5 mt-[18vh] max-w-full overflow-hidden lg:px-32">
                 <div>
                     <h1 className="font-[canoppe] text-6xl text-(--title-color) block lg:hidden">Alguns dos meus projetos</h1>
                     <h1 className="font-[canoppe] text-9xl text-(--title-color) hidden lg:block">Alguns dos meus <br/> projetos</h1>
@@ -82,7 +85,7 @@ export default function Projetos(){
                     {projetosFiltro.map((item, index) => (
                         <Link href={`/projetos/${item.slug}`} onMouseEnter={() => mouseEnterSliderModal(index)} className="transition-all" key={`modal_${index}`}>
                             <div className="w-full h-[0.5px] bg-(--texte-p-color) rounded-full"></div>
-                            <div className="grid grid-cols-3 px-2 py-10 items-center text-(--texte-p-color) font-mono font-light transition-all hover:px-44 hover:opacity-80 lg:px-40 py-13">
+                            <div className="grid grid-cols-3 px-2 py-10 items-center text-(--texte-p-color) font-mono font-light transition-all hover:px-10 hover:opacity-80 xl:px-40 py-13 xl:hover:px-48">
                                 <h2 className="text-xl col-span-2 lg:text-2xl xl:text-4xl">{item.nome}</h2>
                                 <div className="text-end lg:flex justify-between">
                                     <p className=" text-md lg:text-xl">{item.situacao}</p>

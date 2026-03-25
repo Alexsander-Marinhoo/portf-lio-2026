@@ -5,23 +5,25 @@ import { useRef , useEffect , useState } from "react";
 export default function ButtonContactMagnetic({ href , children}){
     const buttonRef = useRef(null)
 
-    useEffect(() => {
-        console.log(href)
-    })
-
     const mouseMove = (e) => {
-        const {clientY , clientX} = e;
-        const {width , height , left , top} = buttonRef.current.getBoundingClientRect();
 
-        const x = clientX - (left + width / 2);
-        const y = clientY - (top + height / 2);
+        const mm = gsap.matchMedia();
 
-        gsap.to(buttonRef.current , {
-            x: x,
-            y: y,
-            duration: 1,
-            ease: "power3.out"
+        mm.add("(min-width: 1280px)", () => {
+            const {clientY , clientX} = e;
+            const {width , height , left , top} = buttonRef.current.getBoundingClientRect();
+    
+            const x = clientX - (left + width / 2);
+            const y = clientY - (top + height / 2);
+    
+            gsap.to(buttonRef.current , {
+                x: x,
+                y: y,
+                duration: 1,
+                ease: "power3.out"
+            })
         })
+
 
     }
 

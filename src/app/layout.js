@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SmoothScroll } from "./components/SmoothScroll";
 import Loader from "./components/Loader";
 import SessionRepos from "./components/sessionRepos";
 
@@ -27,10 +28,12 @@ export default function RootLayout({ children }) {
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <SessionRepos>
-            <Loader />
-            {children}
-          </SessionRepos>
+          <SmoothScroll>
+            <SessionRepos>
+              <Loader />
+              {children}
+            </SessionRepos>
+          </SmoothScroll>
         </body>
       </html>
     </ViewTransition>

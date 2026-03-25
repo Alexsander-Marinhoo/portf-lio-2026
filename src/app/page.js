@@ -17,7 +17,7 @@ export default function Home() {
           <h1 className="text-center xl:text-left">web designer &</h1>
           <h1 className="text-center xl:text-right">front-end developer</h1>
         </div>
-        <div className=" text-sm lg:text-xl text-(--texte-p-color) font-mono font-medium mx-5 my-8 lg:mx-64 text-justify">
+        <div className=" text-sm lg:text-xl text-(--texte-p-color) font-mono font-medium mx-5 my-8 md:mx-15 xl:mx-64 text-justify">
           <p>Especializado em transformar conceitos criativos em experiências digitais envolventes.</p>
           <p>Combinando estética e funcionalidade para criar soluções excepcionais.</p>
         </div>
@@ -27,7 +27,7 @@ export default function Home() {
             <ArrowDown />
           </ButtonProject>
         </div>
-        <div className="mt-[10vh] lg:mt-[30vh] mx-5 lg:mx-64">
+        <div className="mt-[10vh] lg:mt-[30vh] mx-5 md:mx-15 xl:mx-64">
           <Content text1='Minha jornada no mundo digital é marcada pela busca por combinar estética e funcionalidade para criar experiências digitais envolventes.' text2='Com anos de experiência na área, desenvolvi habilidades sólidas em transformar conceitos em interfaces visuais intuitivas e elegantes.'/>
         </div>
         <div  className="flex justify-center lg:justify-end m-15 mx-5 lg:mx-64">
