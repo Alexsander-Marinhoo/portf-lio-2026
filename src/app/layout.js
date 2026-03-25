@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SmoothScroll } from "./components/SmoothScroll";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next"
 import Loader from "./components/Loader";
 import SessionRepos from "./components/sessionRepos";
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
             </SessionRepos>
           </SmoothScroll>
           <SpeedInsights/>
+          <Analytics/>
         </body>
       </html>
     </ViewTransition>
