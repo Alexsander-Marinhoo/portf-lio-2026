@@ -27,7 +27,7 @@ export default function Footer(){
                     <h3 className="text-xl lg:text-3xl">Redes</h3>
                     <div className="flex gap-4 text-md lg:text-xl">
                         <a href='https://github.com/Alexsander-Marinhoo' target="_blank" className="transition-all hover:tracking-[1]">Git Hub</a>
-                        <a href='https://www.instagram.com/tutuzhs/?__pwa=1' target="_blank" className="transition-all hover:tracking-[1]">Instagram</a>
+                        <a href='https://www.instagram.com/alexsander.code/' target="_blank" className="transition-all hover:tracking-[1]">Instagram</a>
                         <a href='https://www.behance.net/alexsandermarinho' target="_blank" className="transition-all hover:tracking-[1]">Behance</a>
                     </div>
                 </div>
