@@ -18,7 +18,7 @@ export default function Contato(){
                     <h2 className=" text-[#DBDBDB] text-4xl mt-10">redes de contato</h2>
                     <div className="text-[#DBDBDB] flex gap-3 text-2xl tracking-wider mt-2 md:gap-6">
                         <a href='https://github.com/Alexsander-Marinhoo' target="_blank" className="transition-all hover:tracking-[4]">Git Hub</a>
-                        <a href='https://www.instagram.com/tutuzhs/?__pwa=1' target="_blank" className="transition-all hover:tracking-[4]">Instagram</a>
+                        <a href='https://www.instagram.com/alexsander.code/' target="_blank" className="transition-all hover:tracking-[4]">Instagram</a>
                         <a href='https://www.behance.net/alexsandermarinho' target="_blank" className="transition-all hover:tracking-[4]">Behance</a>
                     </div>
                 </div>
