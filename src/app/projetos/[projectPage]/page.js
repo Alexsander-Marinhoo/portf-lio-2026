@@ -30,6 +30,7 @@
             Development:'text-[#FADE4D] border-[#FADE4D]',
             Design: 'text-[#5C45FD] border-[#5C45FD]',
             Vue:'text-[#68D38A] border-[#68D38A]',
+            Vite:'text-[#68D38A] border-[#68D38A]',
             React_Native: 'text-[#4595FD] border-[#4595FD]'
         }
         return(
