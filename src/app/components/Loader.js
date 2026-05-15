@@ -55,14 +55,14 @@ export default function Loader() {
             tl.to(h1Arrays, {
                 y: '0%',
                 duration: .5,
-                stagger: 0.075
+                stagger: 0.050
             }, index * 1)
 
             if (index < countRefs.current.length) {
                 tl.to(h1Arrays, {
                     y: '-100%',
                     duration: .5,
-                    stagger: 0.075
+                    stagger: 0.050
                 }, index * 1 + 1)
             }
 
