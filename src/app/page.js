@@ -10,12 +10,12 @@ import ArrowDown from "./components/icons/ArrowDown";
 
 export default function Home() {
   return (
-    <section className="relative w-auto"> 
-      <Navbar showContact={true} color={'var(--foreground)'}/>
+    <section className="relative w-auto">
+      <Navbar showContact={true} color={'var(--foreground)'} />
       <div className="mt-[20vh]">
         <div className="font-[canoppe] text-7xl md:text-8xl 2xl:text-9xl mx-5  xl:mx-64 text-(--title-color)">
           <h1 className="text-center xl:text-left">web designer &</h1>
-          <h1 className="text-center xl:text-right">front-end developer</h1>
+          <h1 className="text-center xl:text-right">full-stack developer</h1>
         </div>
         <div className=" text-sm lg:text-xl text-(--texte-p-color) font-mono font-medium mx-5 my-8 md:mx-15 xl:mx-64 text-justify">
           <p>Especializado em transformar conceitos criativos em experiências digitais envolventes.</p>
@@ -28,9 +28,9 @@ export default function Home() {
           </ButtonProject>
         </div>
         <div className="mt-[10vh] lg:mt-[30vh] mx-5 md:mx-15 xl:mx-64">
-          <Content text1='Minha jornada no mundo digital é marcada pela busca por combinar estética e funcionalidade para criar experiências digitais envolventes.' text2='Com anos de experiência na área, desenvolvi habilidades sólidas em transformar conceitos em interfaces visuais intuitivas e elegantes.'/>
+          <Content text1='Minha jornada no mundo digital é marcada pela busca por combinar estética e funcionalidade para criar experiências digitais envolventes.' text2='Com anos de experiência na área, desenvolvi habilidades sólidas em transformar conceitos em interfaces visuais intuitivas e elegantes.' />
         </div>
-        <div  className="flex justify-center lg:justify-end m-15 mx-5 lg:mx-64">
+        <div className="flex justify-center lg:justify-end m-15 mx-5 lg:mx-64">
           <ButtonContactMagnetic href='/contato'>
             <p className="text-4xl">contato</p>
           </ButtonContactMagnetic>
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-        <Footer />
+      <Footer />
     </section>
   );
 }

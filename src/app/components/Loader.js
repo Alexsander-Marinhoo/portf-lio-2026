@@ -14,7 +14,7 @@ export default function Loader() {
     const digitRefs = useRef([]);
 
     //valores para carregar no DOM
-    const digitsCount = [[0, 0], [2, 7], [6, 5], [9, 8], [9, 9], ['A', 'L', 'E', 'X']];
+    const digitsCount = [[0, 0], [3, 7], [7, 8], [9, 9], ['A', 'L', 'E', 'X']];
     const blocksValue = [[]];
 
     useEffect(() => {
@@ -36,7 +36,7 @@ export default function Loader() {
 
 
         const tl = gsap.timeline({
-            delay: 0.3,
+            delay: 0.15,
             defaults: {
                 ease: "expo.out",
             }
