@@ -54,14 +54,14 @@ export default function Loader() {
 
             tl.to(h1Arrays, {
                 y: '0%',
-                duration: 1,
+                duration: .5,
                 stagger: 0.075
             }, index * 1)
 
             if (index < countRefs.current.length) {
                 tl.to(h1Arrays, {
                     y: '-100%',
-                    duration: 1,
+                    duration: .5,
                     stagger: 0.075
                 }, index * 1 + 1)
             }
@@ -73,7 +73,7 @@ export default function Loader() {
         });
         tl.to(blockRefs.current, {
             clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-            duration: 1,
+            duration: .5,
             stagger: 0.1,
         })
         tl.call(() => {
