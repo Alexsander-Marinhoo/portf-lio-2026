@@ -91,11 +91,23 @@ export default function Projetos(){
                     {projetosFiltro.map((item, index) => (
                         <Link href={`/projetos/${item.slug}`} onMouseEnter={() => mouseEnterSliderModal(index)} className="transition-all" key={`modal_${index}`}>
                             <div className="w-full h-[0.5px] bg-(--texte-p-color) rounded-full"></div>
-                            <div className="grid grid-cols-3 px-2 py-10 items-center text-(--texte-p-color) font-mono font-light transition-all hover:px-10 hover:opacity-80 xl:px-40 py-13 xl:hover:px-48">
-                                <h2 className="text-xl col-span-2 lg:text-2xl xl:text-4xl">{item.nome}</h2>
-                                <div className="text-end lg:flex justify-between">
-                                    <p className=" text-md lg:text-xl">{item.situacao}</p>
-                                    <span className="text-md lg:text-xl">{item.data}</span>
+                            <div className="flex justify-between items-center lg:grid lg:grid-cols-3 px-2 py-6 lg:py-10 text-(--texte-p-color) font-mono font-light transition-all hover:px-2 lg:hover:px-10 hover:opacity-80 xl:px-40 xl:py-13 xl:hover:px-48">
+                                <div className="flex flex-col gap-1 lg:col-span-2">
+                                    <h2 className="text-xl lg:text-2xl xl:text-4xl">{item.nome}</h2>
+                                    <div className="flex gap-2 text-xs lg:hidden opacity-80">
+                                        <span>{item.situacao}</span>
+                                        <span>/</span>
+                                        <span>{item.data}</span>
+                                    </div>
+                                </div>
+                                <div className="flex items-center justify-end gap-4 lg:block">
+                                    <div className="block lg:hidden relative w-20 h-12 rounded-lg overflow-hidden border border-(--main-color)/30">
+                                        <Image src={item.src} fill alt={item.nome} className="object-cover" />
+                                    </div>
+                                    <div className="hidden lg:flex justify-between text-end">
+                                        <p className="text-md lg:text-xl">{item.situacao}</p>
+                                        <span className="text-md lg:text-xl">{item.data}</span>
+                                    </div>
                                 </div>
                             </div>
                         </Link>
