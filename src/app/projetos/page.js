@@ -3,11 +3,11 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import Link from "next/link";
-import { useState , useEffect , useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
-export default function Projetos(){
+export default function Projetos() {
 
-    const [selectButton , setSelectButton] = useState(0);
+    const [selectButton, setSelectButton] = useState(0);
     const refModal = useRef(null)
     const refContainerProjects = useRef(null)
     const refContainerModal = useRef(null)
@@ -36,22 +36,22 @@ export default function Projetos(){
         mm.add("(min-width: 1280px)", () => {
             gsap.to(refModal.current, {
                 scale: 1,
-                duration:0.2,
+                duration: 0.2,
                 ease: 'circ.out',
             })
         })
     }
 
     const mouseLeave = () => {
-        gsap.to(refModal.current,{
+        gsap.to(refModal.current, {
             scale: 0,
-            duration:0.2,
+            duration: 0.2,
             ease: 'circ.in'
         })
     }
 
     const mouseEnterSliderModal = (i) => {
-        gsap.to(refContainerModal.current,{
+        gsap.to(refContainerModal.current, {
             top: `-${i}00%`,
             duration: 0.3,
             ease: [0.76, 0, 0.24, 1]
@@ -59,31 +59,31 @@ export default function Projetos(){
     }
     useEffect(() => {
         const containerProjects = refContainerProjects.current;
-        containerProjects.addEventListener('mousemove', (e) =>{
+        containerProjects.addEventListener('mousemove', (e) => {
             const containerRect = refContainerProjects.current.getBoundingClientRect()
             const { clientX, clientY } = e
-            const { left , top } = containerRect
-            gsap.to(refModal.current,{
+            const { left, top } = containerRect
+            gsap.to(refModal.current, {
                 left: clientX - left - (400 / 2),
                 top: clientY - top - (125 / 1),
                 duration: 0.4,
                 ease: 'power3'
             })
         })
-        
-    },[])
 
-    return(
+    }, [])
+
+    return (
         <div>
-            
-            <Navbar showContact={true} color={'var(--foreground)'}/>
+
+            <Navbar showContact={true} color={'var(--foreground)'} />
             <div className="px-5 mt-[18vh] max-w-full overflow-hidden lg:px-32">
                 <div>
                     <h1 className="font-[canoppe] text-6xl text-(--title-color) block lg:hidden">Alguns dos meus projetos</h1>
-                    <h1 className="font-[canoppe] text-9xl text-(--title-color) hidden lg:block">Alguns dos meus <br/> projetos</h1>
+                    <h1 className="font-[canoppe] text-9xl text-(--title-color) hidden lg:block">Alguns dos meus <br /> projetos</h1>
                     <div className="flex gap-2 my-5 mt-5 lg:gap-7">
-                        {buttons.map((texto , index) => (
-                            <button key={index} onClick={() => valueButton(index)} className={`cursor-pointer font-[canoppe] text-md border-2 border-(--main-color) rounded-full px-1 py-1 transition-colors lg:text-4xl px-5 py-2 ${selectButton === index ? 'text-white bg-(--main-color)' : 'text-(--main-color)' } `}>{texto}</button>
+                        {buttons.map((texto, index) => (
+                            <button key={index} onClick={() => valueButton(index)} className={`cursor-pointer font-[canoppe] text-md border-2 border-(--main-color) rounded-full px-1 py-1 transition-colors lg:text-4xl px-5 py-2 ${selectButton === index ? 'text-white bg-(--main-color)' : 'text-(--main-color)'} `}>{texto}</button>
                         ))}
                     </div>
                 </div>
@@ -91,18 +91,18 @@ export default function Projetos(){
                     {projetosFiltro.map((item, index) => (
                         <Link href={`/projetos/${item.slug}`} onMouseEnter={() => mouseEnterSliderModal(index)} className="transition-all" key={`modal_${index}`}>
                             <div className="w-full h-[0.5px] bg-(--texte-p-color) rounded-full"></div>
-                            <div className="flex justify-between items-center lg:grid lg:grid-cols-3 px-2 py-6 lg:py-10 text-(--texte-p-color) font-mono font-light transition-all hover:px-2 lg:hover:px-10 hover:opacity-80 xl:px-40 xl:py-13 xl:hover:px-48">
-                                <div className="flex flex-col gap-1 lg:col-span-2">
-                                    <h2 className="text-xl lg:text-2xl xl:text-4xl">{item.nome}</h2>
+                            <div className="flex justify-between items-center gap-4 lg:grid lg:grid-cols-3 px-2 py-6 lg:py-10 text-(--texte-p-color) font-mono font-light transition-all hover:px-2 lg:hover:px-10 hover:opacity-80 xl:px-40 xl:py-13 xl:hover:px-48">
+                                <div className="flex flex-col gap-1 lg:col-span-2 min-w-0 flex-1">
+                                    <h2 className="text-2xl xl:text-4xl">{item.nome}</h2>
                                     <div className="flex gap-2 text-xs lg:hidden opacity-80">
                                         <span>{item.situacao}</span>
                                         <span>/</span>
                                         <span>{item.data}</span>
                                     </div>
                                 </div>
-                                <div className="flex items-center justify-end gap-4 lg:block">
-                                    <div className="block lg:hidden relative w-20 h-12 rounded-lg overflow-hidden border border-(--main-color)/30">
-                                        <Image src={item.src} fill alt={item.nome} className="object-cover" />
+                                <div className="flex items-center justify-end gap-4 lg:block flex-shrink-0">
+                                    <div className="block lg:hidden relative w-[144px] h-[90px] bg-[#C7D8C9] p-1 rounded-xl overflow-hidden flex items-center justify-center">
+                                        <Image src={item.src} alt={item.nome} width={144} height={90} className="object-contain" />
                                     </div>
                                     <div className="hidden lg:flex justify-between text-end">
                                         <p className="text-md lg:text-xl">{item.situacao}</p>
@@ -115,9 +115,9 @@ export default function Projetos(){
                     <div className="w-full h-[1px] bg-(--texte-p-color) rounded-full sm:hidden lg:hidden"></div>
                     <div ref={refModal} className="absolute top-0 left-0 bg-[#C7D8C9] w-[400] h-[250] overflow-hidden scale-0 pointer-events-none">
                         <div ref={refContainerModal} className="absolute h-full w-full px-2">
-                            {projetosFiltro.map((item , index) => (
+                            {projetosFiltro.map((item, index) => (
                                 <div key={index} className=" relative h-full w-full flex items-center justify-center">
-                                    <Image src={item.src} alt="imagem projeto" width={1280} height={720}/>
+                                    <Image src={item.src} alt="imagem projeto" width={1280} height={720} />
                                 </div>
                             ))}
                         </div>
