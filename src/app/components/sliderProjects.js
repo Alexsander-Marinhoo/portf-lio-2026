@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
-import { useRef , useEffect } from "react";
+import { useRef , useEffect, useState } from "react";
 
 export default function SliderProjects(){
 
@@ -24,30 +24,41 @@ export default function SliderProjects(){
         Vite:'text-[#68D38A] border-[#68D38A]',
         React_Native: 'text-[#4595FD] border-[#4595FD]'
     }
-    const reposString = sessionStorage.getItem('githubRepos');
-    const reposArray = reposString ? JSON.parse(reposString) : [];
+    const [reposArray, setReposArray] = useState([]);
 
     useEffect(() => {
-        gsap.to(refSlider1.current, {
-            x: 200,
-            scrollTrigger: {
-                trigger: refContainerSlider.current,
-                start: 'top bottom',
-                end: 'bottom top',
-                scrub: true,
-            }
-        })
-        gsap.to(refSlider2.current, {
-            x: -200,
-            scrollTrigger: {
-                trigger: refContainerSlider.current,
-                start: 'top bottom',
-                end: 'bottom top',
-                scrub: true,
-                // markers: true
-            }
-        })
-    }, [])
+        const reposString = sessionStorage.getItem('githubRepos');
+        if (reposString) {
+            setReposArray(JSON.parse(reposString));
+        }
+    }, []);
+
+    useEffect(() => {
+        if (reposArray.length === 0) return;
+
+        const ctx = gsap.context(() => {
+            gsap.to(refSlider1.current, {
+                x: 200,
+                scrollTrigger: {
+                    trigger: refContainerSlider.current,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: true,
+                }
+            })
+            gsap.to(refSlider2.current, {
+                x: -200,
+                scrollTrigger: {
+                    trigger: refContainerSlider.current,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: true,
+                }
+            })
+        });
+
+        return () => ctx.revert();
+    }, [reposArray])
 
     return(
         <div className="my-5 md:my-15 flex flex-col items-center justify-center gap-5 md:gap-10 relative overflow-hidden py-10" ref={refContainerSlider}>

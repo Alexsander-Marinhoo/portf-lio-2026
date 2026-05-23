@@ -16,8 +16,14 @@ export default function Projetos(){
         setSelectButton(index);
     }
 
-    const reposString = sessionStorage.getItem('githubRepos');
-    const reposArray = reposString ? JSON.parse(reposString) : [];
+    const [reposArray, setReposArray] = useState([]);
+
+    useEffect(() => {
+        const reposString = sessionStorage.getItem('githubRepos');
+        if (reposString) {
+            setReposArray(JSON.parse(reposString));
+        }
+    }, []);
 
 
     const buttons = ['todos', 'development', 'design'];
