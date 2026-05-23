@@ -62,7 +62,7 @@ export default function projectPage() {
                             <p className="text-md font-mono text-(--background)">Projeto em andamento</p>
                         </div>
                     ) : (
-                        <ButtonProject href={project.urlSite || '/'}>
+                        <ButtonProject href={project.urlSite || '/'} target="_blank">
                             <p className="">visite</p>
                             <ArrowUpRight size={30} />
                         </ButtonProject>
@@ -89,7 +89,7 @@ export default function projectPage() {
                 <div className="mx-5 mb-30 xl:mx-48">
                     <Content text1={project.texto1} text2={project.texto2} />
                     <div className="flex justify-center py-5 lg:justify-end">
-                        <ButtonProject href={project.urlGit || '/'}>
+                        <ButtonProject href={project.urlGit || '/'} target="_blank">
                             {project.situacao === 'design' ? (
                                 <p className="">Veja no Behance!</p>
                             ) : (

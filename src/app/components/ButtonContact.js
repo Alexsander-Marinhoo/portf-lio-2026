@@ -2,7 +2,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import { useRef , useEffect , useState } from "react";
 
-export default function ButtonContactMagnetic({ href , children}){
+export default function ButtonContactMagnetic({ href , children, ...props}){
     const buttonRef = useRef(null)
 
     const mouseMove = (e) => {
@@ -36,7 +36,7 @@ export default function ButtonContactMagnetic({ href , children}){
         })
     }
     return(
-        <Link ref={buttonRef} onMouseMove={mouseMove} onMouseLeave={mouseLeave} href={href} className="aspect-square bg-(--main-color) inline-block font-[Canopee] rounded-full p-10 text-white">
+        <Link ref={buttonRef} onMouseMove={mouseMove} onMouseLeave={mouseLeave} href={href} {...props} className="aspect-square bg-(--main-color) inline-block font-[Canopee] rounded-full p-10 text-white">
             <div className="flex items-center h-full w-full font-[canoppe]">
                 {children}
             </div>

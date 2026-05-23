@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 import { useRef , useState } from "react";
 
-export default function ButtonProject({ href , children }){
+export default function ButtonProject({ href , children, ...props }){
 
     const buttonProject = useRef(null)
 
@@ -28,7 +28,7 @@ export default function ButtonProject({ href , children }){
     }
 
     return(
-        <Link onMouseEnter={buttonEnter} onMouseLeave={buttonLeave} className="relative" href={href}>
+        <Link onMouseEnter={buttonEnter} onMouseLeave={buttonLeave} className="relative" href={href} {...props}>
             <div className="border-2 border-(--main-color) relative overflow-hidden rounded-4xl text-xl font-bold text-(--main-color) inline-flex gap-2 items-center justify-center font-mono py-2 px-4">
                 <div ref={buttonProject} className=" absolute w-full h-full top-0 left-0 rounded-4xl text-xl font-bold text-white bg-(--main-color) inline-flex gap-2 items-center justify-center font-mono py-2 px-4 recorte">
                     { children }
