@@ -6,7 +6,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
-import { useRef , useEffect, useState } from "react";
+import { useRef , useEffect } from "react";
+import { projects } from "../data/projectsData";
 
 export default function SliderProjects(){
 
@@ -24,17 +25,9 @@ export default function SliderProjects(){
         Vite:'text-[#68D38A] border-[#68D38A]',
         React_Native: 'text-[#4595FD] border-[#4595FD]'
     }
-    const [reposArray, setReposArray] = useState([]);
 
     useEffect(() => {
-        const reposString = sessionStorage.getItem('githubRepos');
-        if (reposString) {
-            setReposArray(JSON.parse(reposString));
-        }
-    }, []);
-
-    useEffect(() => {
-        if (reposArray.length === 0) return;
+        if (projects.length === 0) return;
 
         const ctx = gsap.context(() => {
             gsap.to(refSlider1.current, {
@@ -58,12 +51,12 @@ export default function SliderProjects(){
         });
 
         return () => ctx.revert();
-    }, [reposArray])
+    }, [])
 
     return(
         <div className="my-5 md:my-15 flex flex-col items-center justify-center gap-5 md:gap-10 relative overflow-hidden py-10" ref={refContainerSlider}>
             <div className="flex gap-3 md:gap-5 w-[250vw] md:w-[180vw] lg:w-[120vw]" ref={refSlider1}>
-                {reposArray.slice(0 , 4).map((project , index) => (
+                {projects.slice(0 , 4).map((project , index) => (
                     <Link href={`/projetos/${project.slug}`} key={index} className="w-1/4 h-auto flex flex-col gap-2 items-center justify-center font-mono transition-all rounded-2xl hover:scale-102">
                         <Image className="object-fill shadow-md rounded-2xl border-2 border-(--main-color)" src={project.src} alt='imagem de projeto' width={1920} height={1080} />
                         <div className="w-full flex justify-end items-end gap-2 font-bold">
@@ -75,7 +68,7 @@ export default function SliderProjects(){
                 ))}
             </div>
             <div className="flex gap-3 md:gap-5 w-[250vw] md:w-[180vw] lg:w-[120vw]" ref={refSlider2}>
-                {reposArray.slice(4 , 8).map((project , index) => (
+                {projects.slice(4 , 8).map((project , index) => (
                     <Link href={`/projetos/${project.slug}`} key={index} className="w-1/4 h-auto flex flex-col gap-2 items-center justify-center font-mono transition-all rounded-2xl hover:scale-102">
                         <Image className="object-fill shadow-md rounded-2xl border-2 border-(--main-color)" src={project.src} alt='imagem de projeto' width={1920} height={1080} />
                         <div className="w-full flex justify-end items-end gap-2 font-bold">

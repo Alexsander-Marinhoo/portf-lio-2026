@@ -6,29 +6,17 @@ import Image from "next/image";
 import { ArrowUpRight, GithubIcon, } from "lucide-react";
 
 import { useParams, notFound } from "next/navigation";
-import { useEffect, useState } from "react";
 
 import ButtonContactMagnetic from "@/app/components/ButtonContact";
 import ButtonProject from "@/app/components/ButtonProject";
 import Content from "@/app/components/content";
+import { getProjectBySlug } from "@/app/data/projectsData";
+
 export default function projectPage() {
 
-    const [project, setProject] = useState(null);
-    const [loading, setLoading] = useState(true);
     const params = useParams();
     const slugParam = params.projectPage ?? "";
-
-    useEffect(() => {
-        const reposString = sessionStorage.getItem('githubRepos');
-        const reposArray = reposString ? JSON.parse(reposString) : [];
-        const found = reposArray.find(item => item.slug === slugParam);
-        setProject(found);
-        setLoading(false);
-    }, [slugParam]);
-
-    if (loading) {
-        return null;
-    }
+    const project = getProjectBySlug(slugParam);
 
     if (!project) {
         notFound();

@@ -1,0 +1,206 @@
+[
+  {
+    "nome": "Frederico",
+    "situacao": "development",
+    "data": "2026",
+    "src": "/imgsProjects/frederico.png",
+    "srcMobile": "/imgsProjects/frederico_mobile.png",
+    "slug": "frederico",
+    "urlGit": "https://github.com/Alexsander-Marinhoo/frederico",
+    "urlVideo": "",
+    "urlSite": "https://frederico-liart.vercel.app",
+    "texto1": "Criar o site do meu cachorro foi uma oportunidade perfeita para unir um projeto pessoal com meus estudos, onde pude aplicar e consolidar os fundamentos do HTML padrão na prática.",
+    "texto2": "Cada ajuste e melhoria neste projeto me ajudou a entender melhor o código, ganhar confiança e evoluir como desenvolvedor em formação.",
+    "condicoes": [
+      { "situacao": "HTML" },
+      { "situacao": "Development" }
+    ]
+  },
+  {
+    "nome": "Ascendia 13@.",
+    "situacao": "development",
+    "data": "2026",
+    "src": "/imgsProjects/ascendia13.png",
+    "srcMobile": "/imgsProjects/ascendia13_mobile.png",
+    "slug": "ascendia13",
+    "urlGit": "https://github.com/Alexsander-Marinhoo/ascendia13",
+    "urlVideo": "",
+    "urlSite": "https://ascendia13.vercel.app",
+    "texto1": "Este projeto é um site moderno focado na experiência do usuário para uma imobiliária de Praia Grande, desenvolvido com Vite, com o objetivo de destacar os imóveis disponíveis e facilitar o contato direto com os corretores.",
+    "texto2": "Estruturei a interface com Vite para garantir alta performance na exibição dos imóveis e uma navegação fluida no front-end, mantendo a arquitetura organizada ao integrar o site com um painel administrativo separado para a gestão dos dados.",
+    "condicoes": [
+      { "situacao": "Vite" },
+      { "situacao": "Development" }
+    ]
+  },
+  {
+    "nome": "Vinicius Gennaro",
+    "situacao": "development",
+    "data": "2026",
+    "src": "/imgsProjects/viniciusgennaro.png",
+    "srcMobile": "/imgsProjects/viniciusgennaro_mobile.png",
+    "slug": "vinicius-gennaro",
+    "urlGit": "https://github.com/Alexsander-Marinhoo/viniciusgennaro",
+    "urlVideo": "",
+    "urlSite": "https://viniciusgennaro.vercel.app",
+    "texto1": "Desenvolver a landing page do Dr. Vinicius Gennaro foi uma excelente oportunidade para atuar em um cenário profissional, onde pude aplicar conceitos de design focado em conversão e consolidar minhas habilidades de front-end na prática.",
+    "texto2": "Cada ajuste e refinamento na interface deste projeto odontológico me ajudou a entender melhor as necessidades de um cliente real, ganhar mais confiança no meu código e evoluir como desenvolvedor em formação.",
+    "condicoes": [
+      { "situacao": "HTML" },
+      { "situacao": "Development" }
+    ]
+  },
+  {
+    "nome": "Pokedex",
+    "situacao": "development",
+    "data": "2023",
+    "src": "/imgsProjects/pokedex.png",
+    "srcMobile": "/imgsProjects/pokedex_mobile.png",
+    "slug": "pokedex",
+    "urlGit": "https://github.com/alexsandermarin/Pokedex",
+    "urlVideo": "",
+    "urlSite": "https://alexsandermarin.github.io/Pokedex/",
+    "texto1": "Este projeto representa uma fase importante do meu aprendizado em desenvolvimento web, onde pude praticar HTML, CSS e JavaScript na prática.",
+    "texto2": "Cada foto adicionada e ajustada nesta galeria me ajudou a fixar a base do desenvolvimento web, transformando um projeto especial em aprendizado real e me dando mais segurança na codificação.",
+    "condicoes": [
+      { "situacao": "HTML" },
+      { "situacao": "Development" }
+    ]
+  },
+  {
+    "nome": "Alzz...",
+    "situacao": "design",
+    "data": "2024",
+    "src": "/imgsProjects/alzz.png",
+    "srcMobile": "/imgsProjects/alzz.png",
+    "slug": "alzz",
+    "urlGit": "https://www.behance.net/gallery/246249223/Alzz",
+    "urlVideo": "",
+    "urlSite": "https://www.behance.net/gallery/246249223/Alzz",
+    "texto1": "Este projeto é o design de uma loja de roupas inspirada no estilo minimalista da Zara, criado no Figma com foco em tipografia limpa, cores neutras e destaque para as peças na vitrine digital.",
+    "texto2": "Ao desenvolver esse layout, o objetivo foi praticar UX/UI, organização de grids e criação de páginas de produto e catálogo, melhorando minha habilidade de planejar interfaces profissionais antes da etapa de desenvolvimento.",
+    "condicoes": [
+      { "situacao": "Figma" },
+      { "situacao": "Design" }
+    ]
+  },
+  {
+    "nome": "Jessica Tedesco",
+    "situacao": "development",
+    "data": "2026",
+    "src": "/imgsProjects/jessicatedesco.png",
+    "srcMobile": "/imgsProjects/jessicatedesco_mobile.png",
+    "slug": "jessica-tedesco",
+    "urlGit": "https://github.com/Alexsander-Marinhoo/jessicatedesco",
+    "urlVideo": "",
+    "urlSite": "https://jessicatedesco.vercel.app",
+    "texto1": "Este projeto é uma landing page para uma psicóloga com um design acolhedor e focado em conversão, desenvolvida em Vite como trabalho freelance, priorizando um visual limpo, tipografia serena e clareza nas informações.",
+    "texto2": "Aproveitei a agilidade do Vite para estruturar as seções de apresentação e contato do consultório, praticando a entrega de projetos reais para clientes, otimização de performance e uma experiência de usuário fluida e profissional.",
+    "condicoes": [
+      { "situacao": "Vite" },
+      { "situacao": "Development" }
+    ]
+  },
+  {
+    "nome": "Enzo Geralde",
+    "situacao": "development",
+    "data": "2023",
+    "src": "/imgsProjects/enzogeralde.png",
+    "srcMobile": "/imgsProjects/enzogeralde_mobile.png",
+    "slug": "enzo-geralde",
+    "urlGit": "https://github.com/Alexsander-Marinhoo/enzogeralde",
+    "urlVideo": "",
+    "urlSite": "https://enzogeralde.vercel.app",
+    "texto1": "Este projeto é uma landing page interativa para a barbearia Enzo Geralde, desenvolvida com Next.js e Tailwind CSS, focada em destacar os serviços com um visual moderno, identidade marcante e navegação objetiva.",
+    "texto2": "Usei componentes em Next.js para organizar a apresentação do espaço e integrar um sistema prático de agendamento de horários, praticando a estilização ágil com Tailwind e entregando uma experiência de usuário mais dinâmica e profissional.",
+    "condicoes": [
+      { "situacao": "Next" },
+      { "situacao": "Development" }
+    ]
+  },
+  {
+    "nome": "Steinert",
+    "situacao": "development",
+    "data": "2026",
+    "src": "/imgsProjects/steinert.png",
+    "srcMobile": "/imgsProjects/steinert_mobile.png",
+    "slug": "steinert",
+    "urlGit": "https://github.com/Alexsander-Marinhoo/steinert",
+    "urlVideo": "",
+    "urlSite": "https://steinert-three.vercel.app",
+    "texto1": "Este projeto é um site institucional para a clínica odontológica Steinert, desenvolvido com Vite e Tailwind CSS, focado em transmitir confiança e profissionalismo através de um visual limpo e navegação ágil.",
+    "texto2": "Usei Tailwind CSS para acelerar a estilização das páginas e Vite para otimizar a performance, praticando design responsivo, construção ágil de interfaces e garantindo uma experiência de usuário fluida e moderna.",
+    "condicoes": [
+      { "situacao": "Vite" },
+      { "situacao": "Development" }
+    ]
+  },
+  {
+    "nome": "Sofisti Cão",
+    "situacao": "design",
+    "data": "2025",
+    "src": "/imgsProjects/sofisticao.png",
+    "srcMobile": "/imgsProjects/sofisticao.png",
+    "slug": "sofisticao",
+    "urlGit": "https://www.behance.net/gallery/246249639/Sofisticao?share=1",
+    "urlVideo": "",
+    "urlSite": "https://www.behance.net/gallery/246249639/Sofisticao?share=1",
+    "texto1": " Este projeto é um design de aplicativo de delivery para petshop, criado no Figma com estilo moderno, cores vibrantes e foco em facilitar pedidos de produtos para pets.",
+    "texto2": "Trabalhei em telas de catálogo, carrinho e acompanhamento de pedidos para praticar UX/UI, componentes reutilizáveis e protótipos interativos dentro do Figma.",
+    "condicoes": [
+      { "situacao": "Figma" },
+      { "situacao": "Design" }
+    ]
+  },
+  {
+    "nome": "Naturenouris",
+    "situacao": "design",
+    "data": "2025",
+    "src": "/imgsProjects/naturenouris.png",
+    "srcMobile": "/imgsProjects/naturenouris.png",
+    "slug": "naturenouris",
+    "urlGit": "https://www.behance.net/gallery/246249417/NATUREnouris-hortifruti",
+    "urlVideo": "",
+    "urlSite": "https://www.behance.net/gallery/246249417/NATUREnouris-hortifruti",
+    "texto1": "Este projeto é um design de aplicativo de delivery para uma hortfrut, criado no Figma com estilo moderno, cores frescas e foco em facilitar o pedido de frutas e verduras pelo usuário.",
+    "texto2": "O objetivo foi praticar UX/UI, usando grids, componentes e prototipagem no Figma para simular o fluxo completo de escolha dos produtos, carrinho e acompanhamento do pedido.",
+    "condicoes": [
+      { "situacao": "Figma" },
+      { "situacao": "Design" }
+    ]
+  },
+  {
+    "nome": "Poupe.ai",
+    "situacao": "design",
+    "data": "2026",
+    "src": "/imgsProjects/poupeai.png",
+    "srcMobile": "/imgsProjects/poupeai.png",
+    "slug": "poupe-ai",
+    "urlGit": "https://www.behance.net/gallery/246648093/Poupeai-price-comparison-tool",
+    "urlVideo": "",
+    "urlSite": "https://www.behance.net/gallery/246648093/Poupeai-price-comparison-tool",
+    "texto1": "Este projeto é um design de plataforma de comparação de preços desenvolvido no Figma, com uma interface limpa e intuitiva voltada para ajudar o usuário a encontrar as melhores ofertas de forma rápida e organizada.",
+    "texto2": "O foco do desenvolvimento foi a aplicação de conceitos avançados de UI, como bibliotecas de componentes, auto layout e estados de interação, simulando a jornada de busca, filtragem de preços e redirecionamento para lojas parceiras.",
+    "condicoes": [
+      { "situacao": "Figma" },
+      { "situacao": "Design" }
+    ]
+  },
+  {
+    "nome": "Fleet Pneus",
+    "situacao": "design",
+    "data": "2025",
+    "src": "/imgsProjects/fleetpneus.png",
+    "srcMobile": "/imgsProjects/fleetpneus.png",
+    "slug": "fleet-pneus",
+    "urlGit": "https://www.behance.net/gallery/246249543/Fleet-Pneus?share=1",
+    "urlVideo": "",
+    "urlSite": "https://www.behance.net/gallery/246249543/Fleet-Pneus?share=1",
+    "texto1": "Este projeto é um aplicativo moderno em React Native para controle de pneus de caminhão, pensado para empresas que precisam organizar a gestão da frota pelo celular.",
+    "texto2": "Com ele, foquei em praticar React Native, navegação entre telas e cadastro de dados dos pneus, aproximando o app de um uso real no dia a dia das transportadoras.",
+    "condicoes": [
+      { "situacao": "Figma" },
+      { "situacao": "Design" }
+    ]
+  }
+]

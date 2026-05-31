@@ -4,7 +4,6 @@ import { SmoothScroll } from "./components/SmoothScroll";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next"
 import Loader from "./components/Loader";
-import SessionRepos from "./components/sessionRepos";
 
 import { ViewTransition } from 'react'
 
@@ -31,10 +30,8 @@ export default function RootLayout({ children }) {
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
           <SmoothScroll>
-            <SessionRepos>
-              <Loader />
-              {children}
-            </SessionRepos>
+            <Loader />
+            {children}
           </SmoothScroll>
           <SpeedInsights />
           <Analytics />
