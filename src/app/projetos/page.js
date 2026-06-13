@@ -5,8 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
-import { projects } from "../data/projectsData";
-
 export default function Projetos() {
 
     const [selectButton, setSelectButton] = useState(0);
@@ -18,8 +16,18 @@ export default function Projetos() {
         setSelectButton(index);
     }
 
+    const [reposArray, setReposArray] = useState([]);
+
+    useEffect(() => {
+        const reposString = sessionStorage.getItem('githubRepos');
+        if (reposString) {
+            setReposArray(JSON.parse(reposString));
+        }
+    }, []);
+
+
     const buttons = ['todos', 'development', 'design'];
-    const projetosFiltro = selectButton === 0 ? projects : projects.filter(item => item.situacao === buttons[selectButton]);
+    const projetosFiltro = selectButton === 0 ? reposArray : reposArray.filter(item => item.situacao === buttons[selectButton]);
 
 
     const mouseEnter = () => {
