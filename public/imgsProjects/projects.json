@@ -42,27 +42,6 @@
     ]
   },
   {
-    "nome": "Vinicius Gennaro",
-    "situacao": "development",
-    "data": "2026",
-    "src": "/imgsProjects/viniciusgennaro.png",
-    "srcMobile": "/imgsProjects/viniciusgennaro_mobile.png",
-    "slug": "vinicius-gennaro",
-    "urlGit": "https://github.com/Alexsander-Marinhoo/viniciusgennaro",
-    "urlVideo": "",
-    "urlSite": "https://viniciusgennaro.vercel.app",
-    "texto1": "Desenvolver a landing page do Dr. Vinicius Gennaro foi uma excelente oportunidade para atuar em um cenário profissional, onde pude aplicar conceitos de design focado em conversão e consolidar minhas habilidades de front-end na prática.",
-    "texto2": "Cada ajuste e refinamento na interface deste projeto odontológico me ajudou a entender melhor as necessidades de um cliente real, ganhar mais confiança no meu código e evoluir como desenvolvedor em formação.",
-    "condicoes": [
-      {
-        "situacao": "HTML"
-      },
-      {
-        "situacao": "Development"
-      }
-    ]
-  },
-  {
     "nome": "Corretor Johny",
     "situacao": "development",
     "data": "2026",
@@ -84,20 +63,41 @@
     ]
   },
   {
-    "nome": "Pokedex",
+    "nome": "Vinicius Gennaro",
     "situacao": "development",
-    "data": "2023",
-    "src": "/imgsProjects/pokedex.png",
-    "srcMobile": "/imgsProjects/pokedex_mobile.png",
-    "slug": "pokedex",
-    "urlGit": "https://github.com/alexsandermarin/Pokedex",
+    "data": "2026",
+    "src": "/imgsProjects/viniciusgennaro.png",
+    "srcMobile": "/imgsProjects/viniciusgennaro_mobile.png",
+    "slug": "vinicius-gennaro",
+    "urlGit": "https://github.com/Alexsander-Marinhoo/viniciusgennaro",
     "urlVideo": "",
-    "urlSite": "https://alexsandermarin.github.io/Pokedex/",
-    "texto1": "Este projeto representa uma fase importante do meu aprendizado em desenvolvimento web, onde pude praticar HTML, CSS e JavaScript na prática.",
-    "texto2": "Cada foto adicionada e ajustada nesta galeria me ajudou a fixar a base do desenvolvimento web, transformando um projeto especial em aprendizado real e me dando mais segurança na codificação.",
+    "urlSite": "https://viniciusgennaro.vercel.app",
+    "texto1": "Desenvolver a landing page do Dr. Vinicius Gennaro foi uma excelente oportunidade para atuar em um cenário profissional, onde pude aplicar conceitos de design focado em conversão e consolidar minhas habilidades de front-end na prática.",
+    "texto2": "Cada ajuste e refinamento na interface deste projeto odontológico me ajudou a entender melhor as necessidades de um cliente real, ganhar mais confiança no meu código e evoluir como desenvolvedor em formação.",
     "condicoes": [
       {
         "situacao": "HTML"
+      },
+      {
+        "situacao": "Development"
+      }
+    ]
+  },
+  {
+    "nome": "Jú Vicente",
+    "situacao": "development",
+    "data": "2026",
+    "src": "/imgsProjects/juvicente.png",
+    "srcMobile": "/imgsProjects/juvicente_mobile.png",
+    "slug": "juvicente",
+    "urlGit": "https://github.com/Alexsander-Marinhoo/juvicente",
+    "urlVideo": "",
+    "urlSite": "https://juvicente.vercel.app",
+    "texto1": "Este projeto é um site moderno e responsivo desenvolvido para a professora de inglês Jú Vicente, com design clean, foco na experiência do usuário e integração com o Instagram para facilitar o contato dos clientes.",
+    "texto2": "Utilizei Vite.js e TailwindCSS para criar uma interface limpa, navegação fluida e funcionalidades que aproximam a professora dos clientes, praticando desde a estrutura básica até a aplicação de recursos modernos de interação.",
+    "condicoes": [
+      {
+        "situacao": "Vite"
       },
       {
         "situacao": "Development"
@@ -161,6 +161,27 @@
     "condicoes": [
       {
         "situacao": "Vite"
+      },
+      {
+        "situacao": "Development"
+      }
+    ]
+  },
+  {
+    "nome": "Pokedex",
+    "situacao": "development",
+    "data": "2023",
+    "src": "/imgsProjects/pokedex.png",
+    "srcMobile": "/imgsProjects/pokedex_mobile.png",
+    "slug": "pokedex",
+    "urlGit": "https://github.com/alexsandermarin/Pokedex",
+    "urlVideo": "",
+    "urlSite": "https://alexsandermarin.github.io/Pokedex/",
+    "texto1": "Este projeto representa uma fase importante do meu aprendizado em desenvolvimento web, onde pude praticar HTML, CSS e JavaScript na prática.",
+    "texto2": "Cada foto adicionada e ajustada nesta galeria me ajudou a fixar a base do desenvolvimento web, transformando um projeto especial em aprendizado real e me dando mais segurança na codificação.",
+    "condicoes": [
+      {
+        "situacao": "HTML"
       },
       {
         "situacao": "Development"
